@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[88]:
-
-
 import pandas as pd
 import os
 import scipy.signal
@@ -196,23 +190,6 @@ y_train = train_dataset[1]
 y_test = test_dataset[1]
 
 
-#train = new_dataset[new_dataset[0] < 30] #30
-#test = new_dataset[new_dataset[0] >29] #29
-
-#X_train = train.drop(columns = [0,1])
-#y_train = train[1]
-
-#X_test = test.drop(columns = [0,1])
-#y_test = test[1]
-
-#X = new_dataset.drop(columns = [0,1])
-#y = new_dataset[1]
-
-#users = new_dataset[0]
-
-#y
-
-
 # In[175]:
 
 
@@ -315,10 +292,4 @@ confusion_matrix_logo = metrics.confusion_matrix(y, logo_preds)
 cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix_logo, display_labels = ["Downstairs", "Jogging", "Sitting", "Standing", "Upstairs","Walking"])
 cm_display.plot()
 plt.show()
-
-
-# In[ ]:
-
-
-
 
