@@ -18,13 +18,10 @@ from numpy import mean
 from numpy import std
 from sklearn.preprocessing import LabelEncoder
 from sklearn.datasets import make_classification
-from sklearn.model_selection import cross_val_score, cross_val_predict, train_test_split
+from sklearn.model_selection import cross_val_score, cross_val_predict, train_test_split. LeaveOneGroupOut
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import classification_report
+from sklearn.metrics import roc_auc_score, classification_report, confusion_matrix
 from sklearn import metrics
-from sklearn.model_selection import LeaveOneGroupOut
 
 #create columns for the dataframe
 columns = ['user','activity','timestamp', 'x-axis', 'y-axis', 'z-axis']
